@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palemdrom Number</title>
+</head>
+<body>
+    <script>
+        //function defination
+        var isPalendrom = false;
+        let checkForPalemdrom = (num) => {
+            //alert(num);
+
+            for(var j=(num.length-1); j>=0; j--){
+                console.log(num.charAt(j));
+                for(var i=0; i<num.length;i++){
+                console.log(num.charAt(i));
+                if(num.charAt(j) == num.charAt(i)){
+                    isPalendrom = true;
+                }else{
+                    isPalendrom = false;
+                }
+            }
+            }
+
+            if(isPalendrom == true){
+                alert(num+" is Palendrom number");
+            }else{
+                alert(num+" not a Palendrom number");
+            }
+
+            
+        }
+
+        let number = prompt('Please enter the number...');
+        //number = parseInt(number);
+        checkForPalemdrom(number);
+    </script>
+</body>
+</html>
